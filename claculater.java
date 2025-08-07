@@ -27,6 +27,7 @@ public class claculater {
     else{
         System.out.println("bhai shi operation likh");
     }
+    System.out.println("This is Your result:");
     System.out.println(result);
    } 
    public static int add(int a, int b) {
