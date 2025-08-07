@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class claculater {
    public static void main(String[] args) {
     System.out.println("This is a simple calculator program.");
-    // You can add more functionality here later
     Scanner scn=new Scanner(System.in);
     System.out.println("Enter first Number");
     int a=scn.nextInt();
@@ -29,7 +28,6 @@ public class claculater {
         System.out.println("bhai shi operation likh");
     }
     System.out.println(result);
-
    } 
    public static int add(int a, int b) {
        return a + b;
