@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class claculater {
    public static void main(String[] args) {
     System.out.println("This is a simple calculator program.");
-    // You can add more functionality here later
     Scanner scn=new Scanner(System.in);
     System.out.println("Enter first Number");
     int a=scn.nextInt();
@@ -11,21 +10,24 @@ public class claculater {
     int b=scn.nextInt();
     System.out.println("Enter the operation");
     String inp=scn.next();
+    int result=0;
     if(inp.equals("add")){
-        add(a,b);
+        result=add(a,b);
+        
     }
     else if(inp.equals("multiply")){
-        multiply(a,b);
+        result=multiply(a,b);
     }
     else if(inp.equals("subtract")){
-        subtract(a,b);
+        result=subtract(a,b);
     }
     else if(inp.equals("divide")){
-        divide(a,b);
+        result=divide(a,b);
     }
     else{
         System.out.println("bhai shi operation likh");
     }
+    System.out.println(result);
    } 
    public static int add(int a, int b) {
        return a + b;
